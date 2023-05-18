@@ -1,4 +1,4 @@
-import { socialMedia } from "../pages/main";
+import socialMedia from "../pages/main";
 import styles from "@/styles/style";
 
 const Footer = () => (

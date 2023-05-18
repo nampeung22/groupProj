@@ -1,4 +1,4 @@
-import{FaInstagram, FaFacebookSquare, FaTwitterSquare} from "react-icons/fa"
+import {FaInstagram, FaFacebookSquare, FaTwitterSquare} from "react-icons/fa"
 import {AiFillLinkedin} from "react-icons/ai"
 
 export const navLinks = [
@@ -47,4 +47,6 @@ const socialMedia = [
   },
 ];
 
-export default socialMedia;
+export default function main(){
+  return;
+};

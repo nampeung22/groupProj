@@ -1,7 +1,7 @@
 import React from 'react';
 import {AiOutlineHome} from 'react-icons/ai';
 import {GiReceiveMoney} from 'react-icons/gi';
-import {TbPigMoney} from 'react-icons/Tb';
+import {TbPigMoney} from 'react-icons/tb';
 import { useState } from 'react';
 
 const Nav = () =>{

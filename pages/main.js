@@ -24,7 +24,7 @@ export const navLinks = [
   },
 ];
 
-const socialMedia = [
+export const socialMedia = [
   {
     id: "social-media-1",
     icon: <FaInstagram style={{ color: "white", fontSize: "24px"}} />,

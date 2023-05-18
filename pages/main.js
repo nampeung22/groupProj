@@ -24,7 +24,7 @@ export const navLinks = [
   },
 ];
 
-export const socialMedia = [
+const socialMedia = [
   {
     id: "social-media-1",
     icon: <FaInstagram style={{ color: "white", fontSize: "24px"}} />,
@@ -46,3 +46,5 @@ export const socialMedia = [
     link: "https://www.linkedin.com/",
   },
 ];
+
+export default socialMedia;

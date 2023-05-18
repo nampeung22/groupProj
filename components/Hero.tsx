@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
         </div>
         <span className="text-white ss:text-[20px] text-[20px] max-w-[800px] mt-20 mr-52" >
           Hey there! We wanted to share an exciting opportunity with you. 
-          We've created a DApp aggregating the best pricing for exchanges like Uniswap.
+          We&apos;ve created a DApp aggregating the best pricing for exchanges like Uniswap.
           It could be a great way to capitalize on profitable arbitrage opportunities.</span>
         <div className="absolute z-[0] w-[30%] h-[35%] pink__gradient" />
         <div className="absolute z-[1] w-[30%] h-[30%] white__gradient bottom-20" />

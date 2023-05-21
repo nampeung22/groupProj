@@ -309,7 +309,8 @@ interface Props {
 
 const ApproveButton: React.FC<Props> = ({ tokenAddress, tokenAmount }) => {
   const contractAddress = tokenAddress; // 不同token的地址
-  const abi =  [
+  // ERC20ABI
+  const abi = [
     {
       "inputs": [
         {
@@ -606,30 +607,20 @@ const ApproveButton: React.FC<Props> = ({ tokenAddress, tokenAmount }) => {
       console.log("Accounts:", accounts);
       const contract = new ethers.Contract(contractAddress, abi, signer);
       try {
-
-
-        // const amountInput = document.getElementById('supplyLinkAmount') as HTMLInputElement;
-        // const linknumbersupply = amountInput.value;
-        console.log(contract);
-
-
-        const x = await contract.decimals();
-        console.log(x);
-
         const decimals = await contract.decimals();
         console.log("Decimals:", decimals);
-        
-        const spender = "0xE7EC1B0015eb2ADEedb1B7f9F1Ce82F9DAD6dF08";  // Pool Address
+
+        const spender = "0x7b5C526B7F8dfdff278b4a3e045083FBA4028790";  // Pool Address
         const amountToApprove = ethers.utils.parseUnits(tokenAmount, decimals); // 1 Link
         const approveTx = await contract.approve(spender, amountToApprove)
         console.log("Approve Transaction:", approveTx);
 
 
-        const allowance2 = await contract.allowance(address,spender)
-        console.log("allowance=",allowance2);
+        const allowance = await contract.allowance(address, spender)
+        console.log("allowance=", allowance);
 
 
-        
+        // transfer token
         // const recipient = "0x244274e5411faE385fF3655DC61D948b13FfC807";
         // const amountToSend = ethers.utils.parseUnits("1", decimals);
         // await contract.transfer(recipient, amountToSend)
@@ -641,6 +632,7 @@ const ApproveButton: React.FC<Props> = ({ tokenAddress, tokenAmount }) => {
       alert("Please Connect Metamask")
     }
   }
+
 
 
   return (

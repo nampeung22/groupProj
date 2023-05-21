@@ -456,12 +456,12 @@ const Quoter: React.FC<Props> = ({ tokenAddress }) => {
         <div className="text-xl mx-auto -mt-3"><b>WETH-LINK</b> </div>
         <div className='border-b-2 border-stone-400 -mt-1'> </div>
         <div className='ml-4 -mt-2'>
-          <div id='balance'> <b> Weth Balance: </b> 0 </div>
+<!--           <div id='balance'> <b> Weth Balance: </b> 0 </div> -->
           <div id='uniPrice'> <b> UniPrice: </b> 0 </div>
           <div id='sushiPrice'> <b> SushiPrice: </b> 0 </div>
-          <div id='profit'> <b> Profit: </b> 0 </div>
-          <div id="arbitrage"> <b> Arbitrage Type: </b> </div>
-          <div id="after"> <b> Balance After Arbitage: </b> 0 </div>
+<!--           <div id='profit'> <b> Profit: </b> 0 </div> -->
+          <div id="type"> <b> Arbitrage Type: </b> </div>
+<!--           <div id="after"> <b> Balance After Arbitage: </b> 0 </div> -->
         </div>
         <div className= 'mx-auto w-48'>
           <TextInput

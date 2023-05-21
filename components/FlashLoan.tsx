@@ -990,61 +990,56 @@ const FlashLoan: React.FC<Props> = () => {
   }
 
 
+
+
   return (
     <div className="my-10 flex flex-col gap-5">
-      <span className="text-gradient ss:text-[82px] text-[102px] ml-5"> <b>Flash Loan</b> </span>
+      <h1 className=" text-2xl font-bold ">Flash Loan</h1>
       {/* <div className="text-base font-normal break-all">
-        <b className="text-base font-bold text-white">Contract Address: </b>
-          <span className="font-normal text-white className= ss: text-[15px]"> 0x88608a72dA7af03E4620726Aa23830a36Fd89f7b </span>
+        <b className="text-base font-bold">Contract Address: </b>
+        0x61A1599217350A3aFb9572246245f3016C7cD131
       </div> */}
-      <div className="flex flex-col gap-5 bg-pink-50 items-center justify-center px-10 py-8 rounded-lg shadow-lg w-full md:w-1/2 mt-1 h-full mx-20 ">
-        <div className="text-xl font-normal break-all ">
-            <b>Token Balance: {tokenvalue}</b> 
-        </div>
-        <div className="w-48 text-base font-bold">Please select token you want to flash loan</div>
-        <div className="w-48">
-          <Select defaultValue="Link" value={selectedValue} onChange={handleSelectChange}>
-          <option value="Weth">
-            Weth
-          </option>
-          <option value="Link">
-            Link
-          </option>
-          <option value="DAI">
-            DAI
-          </option>
-          <option value="USDC">
-            USDC
-          </option>
-          <option value="WBTC">
-            WBTC
-          </option>
-          <option value="USDT">
-            USDT
-          </option>
-          <option value="ERUS">
-            ERUS
-          </option>
+      <div className="flex flex-col gap-5 bg-white items-center justify-center mx-auto px-10 py-8 rounded-lg shadow-lg w-full md:w-1/2">
+        <div className="text-base font-normal break-all"><b>Token Balance: </b> {tokenvalue}</div>
+        <div className="text-base font-bold">Please select token you want to flash loan</div>
+        <div className="w-40">
+          <Select defaultValue="Weth" value={selectedValue} onChange={handleSelectChange}>
+            <option value="Weth">
+              Weth
+            </option>
+            <option value="Link">
+              Link
+            </option>
+            <option value="DAI">
+              DAI
+            </option>
+            <option value="USDC">
+              USDC
+            </option>
+            <option value="WBTC">
+              WBTC
+            </option>
+            <option value="USDT">
+              USDT
+            </option>
+            <option value="ERUS">
+              ERUS
+            </option>
           </Select>
         </div>
-        <div className="text-base font-bold">Please tpye the number of token</div>
-        <TextInput
-          type="text"
-          sizing="md"
-          className="w-48"
-          value={value} onChange={handleInputChange} />
-
-
-        <Button className="w-48 bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800" onClick={() => flashLoan()}>
-          Flash Loan
-        </Button>
-
-        <Button className="w-48 bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800" onClick={() => withdraw()}>
-          Withdraw
-        </Button>
-
-        <Button className="w-48 bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800" onClick={() => deposit()}>Deposit</Button>
+        <div className="text-base font-bold">Please input the number of token you want to deposit or flash loan</div>
+        <TextInput type="text" sizing="md" className="w-40" value={value} onChange={handleInputChange} />
+        
+        <Button className='w-32' gradientMonochrome="info" onClick={() => deposit()}>Deposit</Button>
+        <Button className='w-32' gradientMonochrome="info" onClick={() => flashLoan()}>Flash Loan</Button>
+        <Button className='w-32' gradientMonochrome="info" onClick={() => withdraw()}> Withdraw </Button>
+  
       </div>
+
+
+
+
+
 
 
     </div>

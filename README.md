@@ -22,17 +22,5 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Flash
+  This project's main goal is to create a decentralised financial (DeFi) application. It entails leveraging flash loans to purchase assets and then arbitraging those assets on the Decentralised Exchange (DEX) platform. It also would help users to find platforms with cheap purchasing prices and high selling prices to benefit from the price difference. The project is built using Hardhat to write, test, and deploy smart contracts. It also contains the design of a frontend interface and deployment on Vercel which is an online web hosting service. The project primarily finishes connecting popular DeFi platforms such as Aave, Uniswap, and Sushiswap to enable flash loans, arbitrage, liquidity supply for earning interest and so on. The project considers the security of smart contracts and analyses the gas usage efficiency of key functions. The benefit of flash loans is the ability to receive money without requiring collateral, allowing customers to generate profits at no expense. It is crucial to identify arbitrage opportunities quickly and accurately to succeed in real since market prices fluctuate and arbitrage attempts may fail. The importance of this project stems from its potential to help users identify and implement arbitrage opportunities. 
